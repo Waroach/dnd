@@ -14,8 +14,8 @@ function getFetch(){
         document.querySelector('#subClass01').innerText = (`Has the sub classes of... `)
         document.querySelector('#desc01').innerText = (data.desc)
 
-        // forEach the array
-            // clear the ul
+        // forEach START the array
+            // clear the unorderd list
             document.querySelector('#subClassesList').innerHTML = ""
         data.subclasses.forEach(obj => {
             console.log(obj.name)
@@ -26,7 +26,7 @@ function getFetch(){
             // Append above element to its parent
             document.querySelector('#subClassesList').appendChild(li)
         })
-        // END forEach
+        // forEach END
       })
       .catch(err => {
           console.log(`error ${err}`)
